@@ -25,15 +25,17 @@ class Sorting1 {
 	/**Bubble sort O(n^2) */
 	
 
-	/**Insertion sort*/
+	/**Insertion sort O(n^2)*/
 	private static int[] doInsertionSort(int[] arr) {
-
-		if (arr == null || arr.length == 1) {
-			return arr;
-		}
-
-		for (int i = 0; i <= arr.length - 1; i++) {
-		}
+		 for(int i=0;i<arr.length;i++){
+			 int j=i;
+			
+			 while(j>0 && (arr[j-1] > arr[j])){
+				 int temp = arr[j-1];
+				 arr[j-1] = arr[j];
+		         	 arr[j] = temp;
+		                 j--;
+				}			 
 
 		return arr;
 	}

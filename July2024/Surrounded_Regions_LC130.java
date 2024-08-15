@@ -1,5 +1,9 @@
 class Solution {
 
+    //Can be done using BFS too just take the boundaries puth them in queue and perform BFS
+    // TC for BFS O( n * m * 4 ) + O( n * m ) ~= O ( n * m )
+    // TC for DFS O( n * m * 4 ) + O( n * m ) ~= O ( n * m )
+    // SC will be O ( n * m ) for visited array 
     private void dfs(char[][] board,int[][] visited,int row,int col){
 
         int[] r_delta = new int[]{-1,0,1,0};
